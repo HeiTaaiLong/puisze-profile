@@ -1,0 +1,78 @@
+html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, input, div {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+
+body {
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.main {
+    height: 100%;
+    font-family: "Homemade Apple", cursive;
+    /* 画像ファイルの指定 */
+    background-image: url(bg.jpg);
+
+    /* 画像を常に天地左右の中央に配置 */
+    background-position: center center;
+
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    background-color: #464646;
+}
+
+.main-logo {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    float: left;  /* .main-logo と .main-nav を横並びにしたい  */
+}
+
+.main-logo p {
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    margin: auto;
+    color: #fff;
+}
+
+.main-nav {
+    height: 80%;
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.main-nav ul{
+    height: 100%;
+}
+
+.main-nav li{
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(116,156,158,0.6);
+    padding: 0 12px;
+    border: 2px solid #fff;
+    border-right: none;
+    border-radius: 30px 0 0 30px;
+}
